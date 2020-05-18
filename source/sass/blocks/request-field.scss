@@ -1,0 +1,29 @@
+.request-field {
+  width: 100%;
+  min-height: 430px;
+  background-color: $lightBackgroundGreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  background-image: url("../img/backgroung.jpg");
+  background-position: center top;
+}
+
+.request-field h2 {
+  @include reset;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-bottom: calc(16px * 1.5 * 1.5);
+  font-size: calc(16px * 2.5);
+}
+
+.request-field form {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,35 @@
+.header {
+  @include reset;
+  background-color: $backgroundGreen;
+  width: 100%;
+  color: #ffffff;
+}
+
+.header__container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo-wrapper,
+.header__links-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__links-wrapper {
+  justify-content: flex-end;
+}
+
+.header__links-wrapper a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 2px;
+  padding: 20px;
+}

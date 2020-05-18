@@ -1,0 +1,10 @@
+.main {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.main__container {
+  max-width: $mainWidth;
+  margin: 0 auto;
+  padding: 0 90px;
+}
