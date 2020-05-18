@@ -1,4 +1,5 @@
 .body {
+  @include reset;
   font-family: $openSans;
   font-weight: normal;
   font-size: 16px;

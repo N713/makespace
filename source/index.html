@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Description" content="Makespace storage service site">
+  <meta name="Description" content="Makespace help center">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preload" href="fonts/opensansregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -16,8 +16,31 @@
   <title>Makespace</title>
 </head>
   <body class="body">
-    <header class="header"></header>
-    <main class="main"></main>
+    <h1 class="visually-hidden">Makespace Help Center</h1>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo-wrapper">
+          <img src="img/logo-white.svg" width="160" height="39" alt="Makespace Logo">
+        </div>
+        <div class="header__links-wrapper">
+          <a href="https://makespace.com/account/login">Login</a>
+          <a href="https://lotus-test.zendesk.com/hc/en-us/requests/new">Make request</a>
+          <a href="tel:+18332048993">833-204-8993</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="request-field">
+        <h2>How can we help?</h2>
+        <form>
+          <div class="request-field__input-wrapper">
+            <input type="text" name="search" id="search" placeholder="Search...">
+            <button type="submit">Search</button>
+          </div>
+        </form>
+      </section>
+      <div class="main__container"></div>
+    </main>
     <footer class="footer"></footer>
     <script src="js/vendor.js"></script>
     <script src="js/script.js"></script>

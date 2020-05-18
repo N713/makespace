@@ -1,6 +1,12 @@
 $openSans: "Open Sans", "Arial", sans-serif;
-$maxWidth: 1366px;
+$maxWidth: 1200px;
+$mainWidth: 1440px;
 $tabletResolution: 1023px;
 $mobileResolution: 767px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+
+//colors
+$backgroundGreen: #0f3916;
+$lightBackgroundGreen: #1b532d;
+$greenGradient: linear-gradient(257deg,#19361d,#165420);
