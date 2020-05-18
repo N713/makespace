@@ -2,3 +2,10 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin header {
+  font-size: calc(16px * 1.75);
+  margin: 0 0 calc(16px * 1.5);
+  padding: 0 1%;
+  font-weight: 400;
+}
