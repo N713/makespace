@@ -1,15 +1,5 @@
 .body {
-  font-family: $roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  color: $color;
-
-  @include reset;
-}
-
-.body--dark {
-  background-color: $darkColor;
-  overflow: hidden;
+  font-family: $openSans;
+  font-weight: normal;
+  font-size: 16px;
 }
