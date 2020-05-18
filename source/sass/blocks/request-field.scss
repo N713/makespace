@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  position: relative;
 }
 
 .request-field::after {
@@ -37,9 +38,11 @@
 }
 
 .request-field form {
+  box-sizing: border-box;
   max-width: $maxWidth;
-  width: 720px;
+  width: 780px;
   margin: 0 auto;
+  padding: 0 30px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -52,25 +55,64 @@
   position: relative;
 }
 
-.request-field input[type="text"] {
-  @include reset;
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 60px;
-  border: none;
-  border-radius: 6px;
-  padding: 10px 55px;
-}
-
 .request-field__input-wrapper::before {
   content: '';
   display: inline-block;
   width: 22px;
   height: 22px;
   position: absolute;
-  top: 17px;
-  left: 17px;
+  top: 20px;
+  left: 20px;
   background-image: url("../img/search.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.request-field input[type="text"] {
+  @include reset;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 60px;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 55px;
+  font-size: 20px;
+  color: dimgray;
+  outline: none;
+  background-color: lighten(lightgray, 10);
+  transition: background-color 0.5s;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    box-shadow: 0 0 2px 3px $buttonGreen;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    box-shadow: 0 0 2px 3px $buttonGreen;
+  }
+}
+
+.request-field button[type="submit"] {
+  width: 100px;
+  margin-left: 15px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: $buttonGreen;
+  outline: none;
+  transition: background-color 0.5s;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: darken($buttonGreen, 10);
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }

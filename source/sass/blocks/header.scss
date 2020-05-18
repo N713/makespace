@@ -8,7 +8,7 @@
 .header__container {
   max-width: $maxWidth;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -24,6 +24,20 @@
   justify-content: flex-end;
 }
 
+.header__logo-wrapper a {
+  transition: opacity 0.5s;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}
+
 .header__links-wrapper a {
   color: #ffffff;
   text-decoration: none;
@@ -32,4 +46,16 @@
   line-height: 1;
   letter-spacing: 2px;
   padding: 20px;
+  outline: none;
+  transition: color 0.5s;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $buttonGreen;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }

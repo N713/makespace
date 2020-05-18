@@ -1,0 +1,127 @@
+.navigation {
+  @include reset;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.navigation__icons-list {
+  @include reset;
+  padding: 10px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.navigation__icons-list-item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 33.3%;
+}
+
+.navigation__icons-list-item svg circle {
+  transition: stroke 0.5s;
+  stroke: $buttonGreen;
+}
+
+.navigation__icons-list-item svg path {
+  transition: fill 0.5s;
+  fill: $buttonGreen;
+}
+
+.navigation__icons-list-item svg {
+  margin-bottom: 20px;
+}
+
+.navigation__icons-list-item span {
+  transition: color 0.5s;
+  color: #4e5565;
+  text-transform: uppercase;
+}
+
+.navigation__icons-list-link {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.5s;
+   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: $buttonGreen;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.navigation__icons-list-item:hover svg path {
+  fill: #ffffff;
+}
+
+.navigation__icons-list-item:hover svg circle {
+  stroke: #ffffff;
+}
+
+.navigation__icons-list-item:hover .navigation__question {
+  fill: #ffffff;
+}
+
+.navigation__icons-list-link:hover span {
+  color: #ffffff;
+}
+
+.navigation__tile-list {
+  @include reset;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.navigation__tile-list-item {
+  box-sizing: border-box;
+  width: 30%;
+  min-height: 150px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1%;
+}
+
+.navigation__tile-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: $buttonGreen;
+  color: #ffffff;
+  transition: background-color 0.5s;
+  outline: none;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: #ffffff;
+    outline: 2px solid $buttonGreen;
+    color: $buttonGreen;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

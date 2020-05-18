@@ -1,0 +1,50 @@
+.articles,
+.articles h3,
+.articles__list {
+  @include reset;
+}
+
+.articles {
+  padding-bottom: 50px;
+}
+
+.articles h3 {
+  @include header;
+}
+
+.articles__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.articles__list-item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 30%;
+  margin: 1%;
+}
+
+.articles__list-item a {
+  color: lighten($lightBackgroundGreen, 10);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.5s;
+  margin-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    color: $backgroundGreen;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.articles__list-item span {
+  font-size: 14px;
+  color: #979797;
+}
