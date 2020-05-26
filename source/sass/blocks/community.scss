@@ -1,0 +1,37 @@
+.community {
+  margin: 0;
+  padding: 0;
+}
+
+.community__field {
+  padding: calc(16px * 1.5) 15px;
+  margin-bottom: calc(16px * 1.5 * 2);
+  border: 2px solid #eceeef;
+  border-radius: 4px;
+}
+
+.community__field h4 {
+  margin: 0 0 calc(16px * 1.5);
+  font-size: calc(16px * 1.75);
+  font-weight: 400;
+}
+
+.community__field span {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.community__field h4 a {
+  text-decoration: none;
+  color: lighten($lightBackgroundGreen, 10);
+  transition: color 0.5s;
+
+  &:hover,
+  &:focus {
+    color: lighten($lightBackgroundGreen, 20);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
