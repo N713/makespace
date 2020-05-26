@@ -169,3 +169,17 @@
     opacity: 0.3;
   }
 }
+
+@media (max-width: $mobileResolution) {
+  .guide__list {
+    flex-direction: column;
+  }
+
+  .guide__list-item {
+    width: 100%;
+  }
+
+  .guides__active-article {
+    margin-bottom: 20px;
+  }
+}

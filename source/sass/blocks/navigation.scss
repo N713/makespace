@@ -99,6 +99,11 @@
   margin: 1%;
 }
 
+.navigation__tile-list-item a {
+  text-align: center;
+  vertical-align: middle;
+}
+
 .navigation__tile-list-link {
   display: flex;
   justify-content: center;
@@ -123,5 +128,24 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (max-width: $mobileResolution) {
+  .navigation__tile-list {
+    flex-direction: column;
+  }
+
+  .navigation__tile-list-item {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .navigation__icons-list-item {
+    width: 33%;
+  }
+
+  .navigation__icons-list-link {
+    padding: 5px;
   }
 }

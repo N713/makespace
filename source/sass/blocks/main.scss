@@ -8,3 +8,15 @@
   margin: 0 auto;
   padding: 0 90px;
 }
+
+@media (max-width: $tabletResolution) {
+  .main__container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: $mobileResolution) {
+  .main__container {
+    padding: 0 20px;
+  }
+}

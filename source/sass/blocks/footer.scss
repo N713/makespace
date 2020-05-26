@@ -68,3 +68,34 @@
 .footer__socials-link:active svg path {
   fill: $lightBackgroundGreen;
 }
+
+@media (max-width: $tabletResolution) {
+  .footer__container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: $mobileResolution) {
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__wrapper,
+  .footer__socials {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__wrapper {
+    margin-bottom: 40px;
+  }
+
+  .footer__wrapper span {
+    text-align: center;
+  }
+
+  .footer__socials {
+    padding: 0;
+    margin: 0;
+  }
+}

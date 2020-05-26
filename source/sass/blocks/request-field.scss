@@ -11,6 +11,7 @@
   background-position: center top;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .request-field::after {
@@ -114,5 +115,33 @@
 
   &:active {
     opacity: 0.4;
+  }
+}
+
+@media (max-width: $tabletResolution) {
+  .request-field form {
+    width: 100%;
+    min-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: $mobileResolution) {
+  .request-field h2 {
+    width: 90%;
+  }
+
+  .request-field__input-wrapper {
+    flex-direction: column;
+  }
+
+  .request-field input[type="text"] {
+    margin-bottom: 10px;
+  }
+
+  .request-field button[type=submit] {
+    width: 100%;
+    margin: 0;
+    min-height: 60px;
   }
 }

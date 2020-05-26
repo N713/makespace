@@ -48,3 +48,13 @@
   font-size: 14px;
   color: #979797;
 }
+
+@media (max-width: $mobileResolution) {
+  .articles__list {
+    flex-direction: column;
+  }
+
+  .articles__list-item {
+    width: 100%;
+  }
+}
