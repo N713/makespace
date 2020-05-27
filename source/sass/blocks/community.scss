@@ -10,7 +10,7 @@
   border-radius: 4px;
 }
 
-.community__field h4 {
+.community__field h3 {
   margin: 0 0 calc(16px * 1.5);
   font-size: calc(16px * 1.75);
   font-weight: 400;
@@ -21,7 +21,7 @@
   line-height: 1.5;
 }
 
-.community__field h4 a {
+.community__field h3 a {
   text-decoration: none;
   color: lighten($lightBackgroundGreen, 10);
   transition: color 0.5s;
