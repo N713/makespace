@@ -10,6 +10,9 @@
   max-width: $mainWidth;
   margin: 0 auto;
   padding: 0 90px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 @media (max-width: $tabletResolution) {
