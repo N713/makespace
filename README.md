@@ -1,6 +1,6 @@
 # Makespace
 ## Short instruction
-### For start working you shall have:
+### To start your work you shall have:
 * Node.js v.10.15.3
 * Gulp v4
 * npm last version
