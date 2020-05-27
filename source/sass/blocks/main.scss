@@ -1,6 +1,9 @@
 .main {
   width: 100%;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .main__container {
